@@ -13,4 +13,8 @@ Walmart API Docs: https://developer.walmartlabs.com/docs
 
 `npm run clean` to remove latest build directory in `dist/`
 
-`npm run start` to run the latest build server from /dist
+`npm run start` to run the latest build server from `dist/`
+
+`npm run test` to run unit tests on the files in `src/`
+
+`npm run doc` to generate new sets of documentation

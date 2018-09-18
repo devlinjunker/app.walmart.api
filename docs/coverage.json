@@ -1,7 +1,7 @@
 {
-  "coverage": "47.82%",
-  "expectCount": 23,
-  "actualCount": 11,
+  "coverage": "38.09%",
+  "expectCount": 21,
+  "actualCount": 8,
   "files": {
     "src/controllers/hello.controller.js": {
       "expectCount": 3,
@@ -13,18 +13,12 @@
       "actualCount": 1,
       "undocumentLines": []
     },
-    "src/controllers/walmart/products.controller.js": {
-      "expectCount": 4,
-      "actualCount": 3,
-      "undocumentLines": [
-        8
-      ]
-    },
     "src/controllers/walmart/products.controller.spec.js": {
-      "expectCount": 1,
+      "expectCount": 2,
       "actualCount": 0,
       "undocumentLines": [
-        6
+        7,
+        14
       ]
     },
     "src/entry.js": {
@@ -53,6 +47,13 @@
         6,
         8,
         14
+      ]
+    },
+    "src/utility/ratelimit.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        2
       ]
     }
   }

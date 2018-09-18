@@ -31,7 +31,6 @@
     
   <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/server.js~Server.html">Server</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#controllers">controllers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/controllers/hello.controller.js~HelloWorld.html">HelloWorld</a></span></span></li>
-<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#controllers-walmart">controllers/walmart</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/controllers/walmart/products.controller.js~ProductsController.html">ProductsController</a></span></span></li>
 </ul>
 </div>
 </nav>
@@ -40,8 +39,9 @@
 <pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">//@flow
 import { ProductsController } from &apos;./products.controller.js&apos;;
 
-import { describe, it, afterEach } from &apos;mocha&apos;;
+import { describe, it, afterEach, beforeEach } from &apos;mocha&apos;;
 import { expect } from &apos;chai&apos;;
+import _ from &apos;lodash&apos;;
 
 var chai = require(&apos;chai&apos;);
 import sinon from &apos;sinon&apos;;
@@ -50,33 +50,148 @@ chai.should();
 chai.use(sinonChai);
 
 import rp from &apos;request-promise&apos;;
+const ratelimit = require(&apos;../../utility/ratelimit.js&apos;);
 
 describe(&apos;Products Controller&apos;, () =&gt; {
-  describe(&apos;has endpoint FindProducts()&apos;, () =&gt; {
+  const items = [{
+    itemId: &apos;123&apos;,
+    shortDescription: &apos;backpack&apos;,
+    longDescription: &apos;&apos;
+  }, {
+    itemId: &apos;abc&apos;,
+    shortDescription: &apos;purse&apos;,
+    longDescription: &apos;&apos;
+  }];
 
-    const items = [{
-      itemId: &apos;123&apos;
-    }];
-
+  describe(&apos;has endpoint that returns products matching keyword&apos;, () =&gt; {
     it(&apos;passes URL query string parameter to walmart API&apos;, async () =&gt; {
       const getStub = sinon.stub(rp, &apos;get&apos;);
       getStub.resolves(JSON.stringify({
         items
       }));
 
+      let keyword = &apos;test&apos;;
       await ProductsController.FindProducts({
         query: {
-          q: &apos;keyword&apos;
+          q: keyword
         }
       });
 
-      expect(getStub).to.be.called;
+      expect(getStub).to.be.calledWithMatch(ProductsController.endpointPrefix + &apos;search&apos;, {
+        qs: {
+          apiKey: ProductsController.apiKey,
+          query: keyword
+        }
+      });
+      getStub.reset();
+      getStub.resolves(JSON.stringify({
+        items
+      }));
+
+      keyword = &apos;abc&apos;;
+      await ProductsController.FindProducts({
+        query: {
+          q: keyword
+        }
+      });
+
+      expect(getStub).to.be.calledWithMatch(ProductsController.endpointPrefix + &apos;search&apos;, {
+        qs: {
+          apiKey: ProductsController.apiKey,
+          query: keyword
+        }
+      });
     });
 
     it(&apos;returns items from response&apos;, async () =&gt; {
       sinon.stub(rp, &apos;get&apos;).resolves(JSON.stringify({
         items
       }));
+
+      const response = await ProductsController.FindProducts({
+        query: {
+          q: &apos;abc&apos;
+        }
+      });
+
+      expect(response).to.deep.equal(items);
+    });
+  });
+
+  describe(&apos;has endpoint that returns product ids matching keywords&apos;, () =&gt; {
+    it(&apos;calls FindProduct() endpoint&apos;, async () =&gt; {
+      const findProductStub = sinon.stub(ProductsController, &apos;FindProducts&apos;).resolves(items);
+
+      await ProductsController.FindProductIds({
+        query: {
+          q: &apos;abc&apos;
+        }
+      });
+
+      expect(findProductStub).to.be.called;
+    });
+
+    it(&apos;returns list of product ids&apos;, async () =&gt; {
+      sinon.stub(ProductsController, &apos;FindProducts&apos;).resolves(items);
+
+      const response = await ProductsController.FindProductIds({
+        query: {
+          q: &apos;abc&apos;
+        }
+      });
+
+      expect(response).to.deep.equal(_.map(items, &apos;itemId&apos;));
+    });
+  });
+
+  describe(&apos;has endpoint that checks each known item for matching keywords in product description&apos;, () =&gt; {
+
+    beforeEach(() =&gt; {
+      ProductsController.productList = [1, 2];
+      sinon.stub(ratelimit, &apos;ratelimit&apos;).returns(() =&gt; {
+        return new Promise((resolve) =&gt; {
+          resolve();
+        });
+      });
+    });
+
+    it(&apos;calls walmart api with each product id&apos;, async () =&gt; {
+      let getStub = sinon.stub(rp, &apos;get&apos;).resolves(JSON.stringify(items[0]));
+
+      await ProductsController.CheckProducts({
+        query: {
+          q: &apos;backpack&apos;
+        }
+      });
+
+      expect(getStub.callCount).to.equal(ProductsController.productList.length);
+    });
+
+    it(&apos;returns product ids with keywords matching description&apos;, async () =&gt; {
+      let getStub = sinon.stub(rp, &apos;get&apos;);
+      getStub.onFirstCall().resolves(JSON.stringify(items[0]));
+      getStub.onSecondCall().resolves(JSON.stringify(items[1]));
+
+      let foundIds = await ProductsController.CheckProducts({
+        query: {
+          q: &apos;backpack&apos;
+        }
+      });
+
+      expect(foundIds).to.contain(items[0].itemId);
+    });
+
+    it(&apos;does not return product ids without keywords matching description&apos;, async () =&gt; {
+      let getStub = sinon.stub(rp, &apos;get&apos;);
+      getStub.resolves(JSON.stringify(items[0]));
+
+      const foundIds = await ProductsController.CheckProducts({
+        query: {
+          q: &apos;test&apos;
+        }
+      });
+
+      expect(foundIds.length).to.equal(0);
     });
   });
 

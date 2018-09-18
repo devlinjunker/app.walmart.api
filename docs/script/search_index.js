@@ -6,12 +6,6 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
-    "app.api.walmart/src/controllers/walmart/products.controller.js~productscontroller",
-    "class/src/controllers/walmart/products.controller.js~ProductsController.html",
-    "<span>ProductsController</span> <span class=\"search-result-import-path\">app.api.walmart/src/controllers/walmart/products.controller.js</span>",
-    "class"
-  ],
-  [
     "app.api.walmart/src/server.js~server",
     "class/src/server.js~Server.html",
     "<span>Server</span> <span class=\"search-result-import-path\">app.api.walmart/src/server.js</span>",
@@ -330,24 +324,6 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "src/controllers/walmart/products.controller.js",
-    "file/src/controllers/walmart/products.controller.js.html",
-    "src/controllers/walmart/products.controller.js",
-    "file"
-  ],
-  [
-    "src/controllers/walmart/products.controller.js~productscontroller.findproductids",
-    "class/src/controllers/walmart/products.controller.js~ProductsController.html#static-method-FindProductIds",
-    "src/controllers/walmart/products.controller.js~ProductsController.FindProductIds",
-    "method"
-  ],
-  [
-    "src/controllers/walmart/products.controller.js~productscontroller.findproducts",
-    "class/src/controllers/walmart/products.controller.js~ProductsController.html#static-method-FindProducts",
-    "src/controllers/walmart/products.controller.js~ProductsController.FindProducts",
-    "method"
-  ],
-  [
     "src/controllers/walmart/products.controller.spec.js",
     "file/src/controllers/walmart/products.controller.spec.js.html",
     "src/controllers/walmart/products.controller.spec.js",
@@ -405,6 +381,12 @@ window.esdocSearchIndex = [
     "src/server.spec.js",
     "file/src/server.spec.js.html",
     "src/server.spec.js",
+    "file"
+  ],
+  [
+    "src/utility/ratelimit.js",
+    "file/src/utility/ratelimit.js.html",
+    "src/utility/ratelimit.js",
     "file"
   ]
 ]
