@@ -38,6 +38,7 @@
     "babel-core": "^6.26.3",
     "hapi": "^17.5.4",
     "hapi-pino": "^5.1.0",
+    "promise-ratelimit": "0.0.3",
     "request-promise": "^4.2.2"
   },
   "scripts": {

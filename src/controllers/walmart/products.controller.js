@@ -2,11 +2,33 @@
 require('babel-core/register');
 require('babel-polyfill');
 
-import _ from 'lodash';
+const ratelimit = require('promise-ratelimit');
 
+import _ from 'lodash';
 import rp from 'request-promise';
 
 const apiKey = 'kjybrqfdgp3u4yv2qzcnjndj';
+
+const productList = [
+  14225185,
+  14225186,
+  14225188,
+  14225187,
+  39082884,
+  30146244,
+  12662817,
+  34890820,
+  19716431,
+  42391766,
+  35813552,
+  40611708,
+  40611825,
+  36248492,
+  44109840,
+  23117408,
+  35613901,
+  42248076
+];
 
 /**
  * Walmart Product API Controller
@@ -21,7 +43,7 @@ export class ProductsController {
     const keywordString = request.query.q;
 
     const response = JSON.parse(await rp.get('http://api.walmartlabs.com/v1/search', {
-      q: {
+      qs: {
         apiKey,
         query: keywordString
       }
@@ -40,6 +62,37 @@ export class ProductsController {
 
     return _.map(response, 'itemId');
   }
+
+  /**
+   * Iterates through the list of ids given by the project challenge and checks the item descriptions for the keyword
+   * @param  {RequestParams}  request request parameters
+   * @return {Promise}         resolves once the product ids have each been searched and returns the matching IDs
+   */
+  static async CheckProducts(request: any) {
+    const keywordString = request.query.q;
+    const endpoint = 'http://api.walmartlabs.com/v1/items/';
+
+    const throttle = ratelimit(200);
+    const found = [];
+    for(let i = 0; i < productList.length; i++){
+      const id = productList[i];
+      await throttle();
+      const obj = await rp.get(endpoint+id, {
+        qs: {
+          apiKey,
+        }
+      });
+
+      const product = JSON.parse(obj);
+
+      if(product.shortDescription.toLowerCase().indexOf(keywordString.toLowerCase()) !== -1 ||
+          product.longDescription.toLowerCase().indexOf(keywordString.toLowerCase()) !== -1) {
+        found.push(product.itemId);
+      }
+    }
+
+    return found;
+  }
 }
 
 export default [
@@ -52,5 +105,10 @@ export default [
     path: '/walmart/product/ids',
     method: 'GET',
     controller: ProductsController.FindProductIds
+  },
+  {
+    path: '/walmart/products/simple',
+    method: 'GET',
+    controller: ProductsController.CheckProducts
   }
 ];
