@@ -37,7 +37,8 @@
   "dependencies": {
     "babel-core": "^6.26.3",
     "hapi": "^17.5.4",
-    "hapi-pino": "^5.1.0"
+    "hapi-pino": "^5.1.0",
+    "request-promise": "^4.2.2"
   },
   "scripts": {
     "test": "./node_modules/.bin/nyc ./node_modules/.bin/mocha",
