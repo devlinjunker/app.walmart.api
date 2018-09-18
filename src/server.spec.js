@@ -1,3 +1,4 @@
+//@flow
 import Server from './server.js';
 
 import { describe, it, afterEach } from 'mocha';

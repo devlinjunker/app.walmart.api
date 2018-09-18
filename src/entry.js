@@ -6,10 +6,14 @@ import Server from './server.js';
 
 const server = new Server();
 
-import helloRoutes from './controllers/hello.js';
+import infoRoutes from './controllers/info.controller.js';
+import helloRoutes from './controllers/hello.controller.js';
+
+let routes = infoRoutes.concat(helloRoutes);
+
 server.run().then(() => {
 
-  server.addEndpoints(helloRoutes);
+  server.addEndpoints(routes);
 });
 
 process.on('unhandledRejection', (err) => {

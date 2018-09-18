@@ -1,4 +1,5 @@
-import { HelloWorld } from './hello.js';
+//@flow
+import { HelloWorld } from './hello.controller.js';
 
 import { describe, it } from 'mocha';
 import { expect } from 'chai';
