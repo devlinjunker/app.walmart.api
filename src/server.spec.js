@@ -3,6 +3,8 @@ import Server from './server.js';
 import { describe, it, afterEach } from 'mocha';
 import { expect } from 'chai';
 
+const _ = require('lodash');
+
 var chai = require('chai');
 import sinon from 'sinon';
 import sinonChai from 'sinon-chai';
@@ -84,6 +86,47 @@ describe('Server', () => {
       expect(routeSpy).to.be.calledWithMatch({
         method: 'GET',
         path: 'test/test',
+        handler: endpoint.controller
+      });
+    });
+  });
+
+  describe('has method to add multiple endpoints at once', async () => {
+    it('calls route with each endpoint', async () => {
+      const endpoint = {
+        method: 'GET',
+        path: 'test/test',
+        controller: () => {
+
+        }
+      };
+      const endpoints = [endpoint, _.clone(endpoint)];
+      endpoints[1].path = 'test2';
+
+      let routeSpy = sinon.spy();
+      sinon.stub(Hapi, 'server').returns({
+        start: sinon.fake(),
+        register: sinon.fake(),
+        info: {
+          port: 3333
+        },
+        route: routeSpy,
+      });
+
+      let server = new Server();
+      await server.run();
+
+      server.addEndpoints(endpoints);
+
+      expect(routeSpy.firstCall).to.be.calledWithMatch({
+        method: 'GET',
+        path: 'test/test',
+        handler: endpoint.controller
+      });
+
+      expect(routeSpy.secondCall).to.be.calledWithMatch({
+        method: 'GET',
+        path: 'test2',
         handler: endpoint.controller
       });
     });

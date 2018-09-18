@@ -6,14 +6,10 @@ import Server from './server.js';
 
 const server = new Server();
 
+import helloRoutes from './controllers/hello.js';
 server.run().then(() => {
-  server.addEndpoint({
-    method: 'GET',
-    path: '/hello',
-    controller: () => {
-      return 'hello!';
-    }
-  });
+
+  server.addEndpoints(helloRoutes);
 });
 
 process.on('unhandledRejection', (err) => {

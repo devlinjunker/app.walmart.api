@@ -65,4 +65,14 @@ export default class Server {
       throw new Error('Must initialize server');
     }
   }
+
+  /**
+   * Adds the endpoints given to the server
+   * @param {Array<Endpoint>} routes Routes to add to the server
+   */
+  addEndpoints(routes: Array<Endpoint>) {
+    for(var i = 0; i < routes.length; i++) {
+      this.addEndpoint(routes[i]);
+    }
+  }
 }
