@@ -111,7 +111,7 @@ export default [
     controller: ProductsController.FindProductIds
   },
   {
-    path: '/walmart/products/simple',
+    path: '/walmart/products/challenge',
     method: 'GET',
     controller: ProductsController.CheckProducts
   }
