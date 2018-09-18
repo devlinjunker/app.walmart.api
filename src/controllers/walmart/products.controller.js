@@ -37,7 +37,7 @@ export class ProductsController {
 
   /**
    * Takes the q parameter from the query string and passes to walmart API as the keyword
-   * @param  {RequestParams}  request request parameters
+   * @param  {RequestParams}  request request parameters with request.query.q set
    * @return {Promise}        resolves once returning the results from walmart API
    */
   static async FindProducts(request: any) {
@@ -55,7 +55,7 @@ export class ProductsController {
 
   /**
    * Uses the q parameter of query string and returns a list of IDs of products returned from walmart API
-   * @param  {RequestParams}  request request parameters
+   * @param  {RequestParams}  request request parameters with request.query.q set
    * @return {Promise}         resolves once returning the product ids matching the keyword
    */
   static async FindProductIds(request: any) {
@@ -65,8 +65,26 @@ export class ProductsController {
   }
 
   /**
+   * Returns a specific product object
+   * @param  {Request Params}  request request parameters with request.params.id set
+   * @return {Promise}         Resolves with the product object once it has been retrieved
+   */
+  static async getProduct(request: any) {
+    const id = request.params.id;
+
+    const endpoint = ProductsController.endpointPrefix + 'items/';
+    const obj = await rp.get(endpoint+id, {
+      qs: {
+        apiKey: ProductsController.apiKey,
+      }
+    });
+
+    return JSON.parse(obj);
+  }
+
+  /**
    * Iterates through the list of ids given by the project challenge and checks the item descriptions for the keyword
-   * @param  {RequestParams}  request request parameters
+   * @param  {RequestParams}  request request parameters with request.query.q set
    * @return {Promise}         resolves once the product ids have each been searched and returns the matching IDs
    */
   static async CheckProducts(request: any) {
@@ -106,7 +124,7 @@ export default [
     controller: ProductsController.FindProducts
   },
   {
-    path: '/walmart/product/ids',
+    path: '/walmart/products/ids',
     method: 'GET',
     controller: ProductsController.FindProductIds
   },
@@ -114,5 +132,11 @@ export default [
     path: '/walmart/products/challenge',
     method: 'GET',
     controller: ProductsController.CheckProducts
+  },
+  {
+    path: '/walmart/product/{id}',
+    method: 'GET',
+    controller: ProductsController.getProduct
   }
+
 ];

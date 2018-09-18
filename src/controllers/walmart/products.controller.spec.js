@@ -134,7 +134,7 @@ describe('Products Controller', () => {
       getStub.onFirstCall().resolves(JSON.stringify(items[0]));
       getStub.onSecondCall().resolves(JSON.stringify(items[1]));
 
-      let foundIds = await ProductsController.CheckProducts({
+      const foundIds = await ProductsController.CheckProducts({
         query: {
           q: 'backpack'
         }
@@ -154,6 +154,28 @@ describe('Products Controller', () => {
       });
 
       expect(foundIds.length).to.equal(0);
+    });
+  });
+
+  describe('has endpoint to retrieve object by id', () => {
+    it('calls walmart api with id passed in via url parsing', async () => {
+      let getStub = sinon.stub(rp, 'get');
+      getStub.onFirstCall().resolves(JSON.stringify(items[0]));
+
+      const productId = 'abc';
+      const product = await ProductsController.getProduct({
+        params: {
+          id: productId
+        }
+      });
+
+      expect(getStub).to.be.calledWith(ProductsController.endpointPrefix + 'items/' + productId, {
+        qs: {
+          apiKey: ProductsController.apiKey
+        }
+      });
+
+      expect(product).to.deep.equal(items[0]);
     });
   });
 
