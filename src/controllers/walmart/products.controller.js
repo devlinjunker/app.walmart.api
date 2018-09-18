@@ -2,38 +2,39 @@
 require('babel-core/register');
 require('babel-polyfill');
 
-const ratelimit = require('promise-ratelimit');
+const ratelimit = require('../../utility/ratelimit.js').ratelimit;
 
 import _ from 'lodash';
 import rp from 'request-promise';
-
-const apiKey = 'kjybrqfdgp3u4yv2qzcnjndj';
-
-const productList = [
-  14225185,
-  14225186,
-  14225188,
-  14225187,
-  39082884,
-  30146244,
-  12662817,
-  34890820,
-  19716431,
-  42391766,
-  35813552,
-  40611708,
-  40611825,
-  36248492,
-  44109840,
-  23117408,
-  35613901,
-  42248076
-];
 
 /**
  * Walmart Product API Controller
  */
 export class ProductsController {
+
+  static endpointPrefix = 'http://api.walmartlabs.com/v1/';
+  static apiKey: string = 'kjybrqfdgp3u4yv2qzcnjndj';
+  static productList = [
+    14225185,
+    14225186,
+    14225188,
+    14225187,
+    39082884,
+    30146244,
+    12662817,
+    34890820,
+    19716431,
+    42391766,
+    35813552,
+    40611708,
+    40611825,
+    36248492,
+    44109840,
+    23117408,
+    35613901,
+    42248076
+  ];
+
   /**
    * Takes the q parameter from the query string and passes to walmart API as the keyword
    * @param  {RequestParams}  request request parameters
@@ -42,9 +43,9 @@ export class ProductsController {
   static async FindProducts(request: any) {
     const keywordString = request.query.q;
 
-    const response = JSON.parse(await rp.get('http://api.walmartlabs.com/v1/search', {
+    const response = JSON.parse(await rp.get(ProductsController.endpointPrefix + 'search/', {
       qs: {
-        apiKey,
+        apiKey: ProductsController.apiKey,
         query: keywordString
       }
     }));
@@ -70,24 +71,27 @@ export class ProductsController {
    */
   static async CheckProducts(request: any) {
     const keywordString = request.query.q;
-    const endpoint = 'http://api.walmartlabs.com/v1/items/';
+    const endpoint = ProductsController.endpointPrefix + 'items/';
 
     const throttle = ratelimit(200);
     const found = [];
-    for(let i = 0; i < productList.length; i++){
-      const id = productList[i];
+    for(let i = 0; i < ProductsController.productList.length; i++){
+      const id = ProductsController.productList[i];
       await throttle();
       const obj = await rp.get(endpoint+id, {
         qs: {
-          apiKey,
+          apiKey: ProductsController.apiKey,
         }
       });
 
       const product = JSON.parse(obj);
+      const productDescription = product.shortDescription + ':' + product.longDescription;
 
-      if(product.shortDescription.toLowerCase().indexOf(keywordString.toLowerCase()) !== -1 ||
-          product.longDescription.toLowerCase().indexOf(keywordString.toLowerCase()) !== -1) {
-        found.push(product.itemId);
+      const keywordArr = keywordString.split(' ');
+      for(let i = 0; i < keywordArr.length; i++){
+        if(productDescription.toLowerCase().indexOf(keywordArr[i].toLowerCase()) !== -1) {
+          found.push(product.itemId);
+        }
       }
     }
 
