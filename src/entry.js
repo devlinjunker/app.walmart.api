@@ -9,7 +9,9 @@ const server = new Server();
 import infoRoutes from './controllers/info.controller.js';
 import helloRoutes from './controllers/hello.controller.js';
 
-let routes = infoRoutes.concat(helloRoutes);
+import walmartProductRoutes from './controllers/walmart/products.controller.js';
+
+let routes = infoRoutes.concat(helloRoutes, walmartProductRoutes);
 
 server.run().then(() => {
 
