@@ -1,0 +1,1204 @@
+[
+  {
+    "__docId__": 1,
+    "kind": "external",
+    "name": "Infinity",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Infinity",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 2,
+    "kind": "external",
+    "name": "NaN",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~NaN",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 3,
+    "kind": "external",
+    "name": "undefined",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~undefined",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 4,
+    "kind": "external",
+    "name": "null",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~null",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 5,
+    "kind": "external",
+    "name": "Object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 6,
+    "kind": "external",
+    "name": "object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 7,
+    "kind": "external",
+    "name": "Function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 8,
+    "kind": "external",
+    "name": "function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 9,
+    "kind": "external",
+    "name": "Boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 10,
+    "kind": "external",
+    "name": "boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 11,
+    "kind": "external",
+    "name": "Symbol",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Symbol",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 12,
+    "kind": "external",
+    "name": "Error",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Error",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 13,
+    "kind": "external",
+    "name": "EvalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~EvalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 14,
+    "kind": "external",
+    "name": "InternalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/InternalError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~InternalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 15,
+    "kind": "external",
+    "name": "RangeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~RangeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 16,
+    "kind": "external",
+    "name": "ReferenceError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~ReferenceError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 17,
+    "kind": "external",
+    "name": "SyntaxError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~SyntaxError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 18,
+    "kind": "external",
+    "name": "TypeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~TypeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 19,
+    "kind": "external",
+    "name": "URIError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/URIError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~URIError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 20,
+    "kind": "external",
+    "name": "Number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 21,
+    "kind": "external",
+    "name": "number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 22,
+    "kind": "external",
+    "name": "Date",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Date",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 23,
+    "kind": "external",
+    "name": "String",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~String",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 24,
+    "kind": "external",
+    "name": "string",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~string",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 25,
+    "kind": "external",
+    "name": "RegExp",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~RegExp",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 26,
+    "kind": "external",
+    "name": "Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 27,
+    "kind": "external",
+    "name": "Int8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int8Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 28,
+    "kind": "external",
+    "name": "Uint8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 29,
+    "kind": "external",
+    "name": "Uint8ClampedArray",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint8ClampedArray",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 30,
+    "kind": "external",
+    "name": "Int16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int16Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 31,
+    "kind": "external",
+    "name": "Uint16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint16Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 32,
+    "kind": "external",
+    "name": "Int32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 33,
+    "kind": "external",
+    "name": "Uint32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 34,
+    "kind": "external",
+    "name": "Float32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Float32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 35,
+    "kind": "external",
+    "name": "Float64Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Float64Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 36,
+    "kind": "external",
+    "name": "Map",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Map",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 37,
+    "kind": "external",
+    "name": "Set",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Set",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 38,
+    "kind": "external",
+    "name": "WeakMap",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~WeakMap",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 39,
+    "kind": "external",
+    "name": "WeakSet",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~WeakSet",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 40,
+    "kind": "external",
+    "name": "ArrayBuffer",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~ArrayBuffer",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 41,
+    "kind": "external",
+    "name": "DataView",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~DataView",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 42,
+    "kind": "external",
+    "name": "JSON",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~JSON",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 43,
+    "kind": "external",
+    "name": "Promise",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Promise",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 44,
+    "kind": "external",
+    "name": "Generator",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Generator",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 45,
+    "kind": "external",
+    "name": "GeneratorFunction",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~GeneratorFunction",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 46,
+    "kind": "external",
+    "name": "Reflect",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Reflect",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 47,
+    "kind": "external",
+    "name": "Proxy",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Proxy",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 48,
+    "kind": "file",
+    "name": "src/controllers/hello.controller.js",
+    "content": "//@flow\n\n/**\n * Controllers for Hello World\n */\nexport class HelloWorld {\n  /**\n   * Returns 'Hello World!'\n   * @return {String} Hello World!\n   */\n  static basic() {\n    return 'Hello World!';\n  }\n\n  /**\n   * Returns a customized Hello Message\n   * @param  {RequestParams} request Request Parameters\n   * @return {String}         Customized Hello Message\n   */\n  static name(request: any) {\n\n    let name = request.params.name;\n\n    return 'Hello '+ name + '!';\n  }\n}\n\nexport default [\n  {\n    path: '/hello',\n    method: 'GET',\n    controller: HelloWorld.basic\n  },\n  {\n    path: '/{name}',\n    method: 'GET',\n    controller: HelloWorld.name\n  }\n];\n",
+    "static": true,
+    "longname": "/Users/djunker/js/app/app.walmart.api/src/controllers/hello.controller.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 49,
+    "kind": "class",
+    "name": "HelloWorld",
+    "memberof": "src/controllers/hello.controller.js",
+    "static": true,
+    "longname": "src/controllers/hello.controller.js~HelloWorld",
+    "access": "public",
+    "export": true,
+    "importPath": "app.api.walmart/src/controllers/hello.controller.js",
+    "importStyle": "{HelloWorld}",
+    "description": "Controllers for Hello World",
+    "lineNumber": 6,
+    "interface": false
+  },
+  {
+    "__docId__": 50,
+    "kind": "method",
+    "name": "basic",
+    "memberof": "src/controllers/hello.controller.js~HelloWorld",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/controllers/hello.controller.js~HelloWorld.basic",
+    "access": "public",
+    "description": "Returns 'Hello World!'",
+    "lineNumber": 11,
+    "return": {
+      "nullable": null,
+      "types": [
+        "String"
+      ],
+      "spread": false,
+      "description": "Hello World!"
+    },
+    "params": []
+  },
+  {
+    "__docId__": 51,
+    "kind": "method",
+    "name": "name",
+    "memberof": "src/controllers/hello.controller.js~HelloWorld",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/controllers/hello.controller.js~HelloWorld.name",
+    "access": "public",
+    "description": "Returns a customized Hello Message",
+    "lineNumber": 20,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "RequestParams"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "request",
+        "description": "Request Parameters"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "String"
+      ],
+      "spread": false,
+      "description": "Customized Hello Message"
+    }
+  },
+  {
+    "__docId__": 52,
+    "kind": "file",
+    "name": "src/controllers/hello.controller.spec.js",
+    "content": "//@flow\nimport { HelloWorld } from './hello.controller.js';\n\nimport { describe, it } from 'mocha';\nimport { expect } from 'chai';\n\ndescribe('HelloWorld', () => {\n  describe('basic()', () => {\n    it('returns \\'Hello World!\\'', () => {\n      const returned = HelloWorld.basic();\n\n      expect(returned).to.equal('Hello World!');\n    });\n  });\n\n  describe('name()', () => {\n    it('returns \\'Hello {request.params.name}!\\'', () => {\n      let request = {\n        params: {\n          name: 'Devlin'\n        }\n      };\n\n      let returned = HelloWorld.name(request);\n      expect(returned).to.equal('Hello Devlin!');\n\n      request.params.name = 'Michelle';\n\n      returned = HelloWorld.name(request);\n      expect(returned).to.equal('Hello Michelle!');\n    });\n  });\n});\n",
+    "static": true,
+    "longname": "/Users/djunker/js/app/app.walmart.api/src/controllers/hello.controller.spec.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 53,
+    "kind": "file",
+    "name": "src/controllers/info.controller.js",
+    "content": "//@flow\n\n/**\n * Basic Controller for returning server information\n * @param  {RequestParams} request Request Parameters\n * @return {Object}         Server information Object\n */\nfunction controller(request: any) {\n  return request.server.info;\n}\n\nexport default [\n  {\n    path: '/info',\n    method: 'GET',\n    controller\n  }\n];\n",
+    "static": true,
+    "longname": "/Users/djunker/js/app/app.walmart.api/src/controllers/info.controller.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 54,
+    "kind": "function",
+    "name": "controller",
+    "memberof": "src/controllers/info.controller.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/controllers/info.controller.js~controller",
+    "access": "public",
+    "export": false,
+    "importPath": "app.api.walmart/src/controllers/info.controller.js",
+    "importStyle": null,
+    "description": "Basic Controller for returning server information",
+    "lineNumber": 8,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "RequestParams"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "request",
+        "description": "Request Parameters"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Object"
+      ],
+      "spread": false,
+      "description": "Server information Object"
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 55,
+    "kind": "file",
+    "name": "src/controllers/walmart/products.controller.js",
+    "content": "//@flow\nrequire('babel-core/register');\nrequire('babel-polyfill');\n\nimport _ from 'lodash';\n\nimport rp from 'request-promise';\n\nconst apiKey = 'kjybrqfdgp3u4yv2qzcnjndj';\n\n/**\n * Walmart Product API Controller\n */\nexport class ProductsController {\n  /**\n   * Takes the q parameter from the query string and passes to walmart API as the keyword\n   * @param  {RequestParams}  request request parameters\n   * @return {Promise}        resolves once returning the results from walmart API\n   */\n  static async FindProducts(request: any) {\n    const keywordString = request.query.q;\n\n    const response = JSON.parse(await rp.get('http://api.walmartlabs.com/v1/search', {\n      q: {\n        apiKey,\n        query: keywordString\n      }\n    }));\n\n    return response.items;\n  }\n\n  /**\n   * Uses the q parameter of query string and returns a list of IDs of products returned from walmart API\n   * @param  {RequestParams}  request request parameters\n   * @return {Promise}         resolves once returning the product ids matching the keyword\n   */\n  static async FindProductIds(request: any) {\n    const response = await ProductsController.FindProducts(request);\n\n    return _.map(response, 'itemId');\n  }\n}\n\nexport default [\n  {\n    path: '/walmart/products',\n    method: 'GET',\n    controller: ProductsController.FindProducts\n  },\n  {\n    path: '/walmart/product/ids',\n    method: 'GET',\n    controller: ProductsController.FindProductIds\n  }\n];\n",
+    "static": true,
+    "longname": "/Users/djunker/js/app/app.walmart.api/src/controllers/walmart/products.controller.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 56,
+    "kind": "variable",
+    "name": "apiKey",
+    "memberof": "src/controllers/walmart/products.controller.js",
+    "static": true,
+    "longname": "src/controllers/walmart/products.controller.js~apiKey",
+    "access": "public",
+    "export": false,
+    "importPath": "app.api.walmart/src/controllers/walmart/products.controller.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 8,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 57,
+    "kind": "class",
+    "name": "ProductsController",
+    "memberof": "src/controllers/walmart/products.controller.js",
+    "static": true,
+    "longname": "src/controllers/walmart/products.controller.js~ProductsController",
+    "access": "public",
+    "export": true,
+    "importPath": "app.api.walmart/src/controllers/walmart/products.controller.js",
+    "importStyle": "{ProductsController}",
+    "description": "Walmart Product API Controller",
+    "lineNumber": 13,
+    "interface": false
+  },
+  {
+    "__docId__": 58,
+    "kind": "method",
+    "name": "FindProducts",
+    "memberof": "src/controllers/walmart/products.controller.js~ProductsController",
+    "generator": false,
+    "async": true,
+    "static": true,
+    "longname": "src/controllers/walmart/products.controller.js~ProductsController.FindProducts",
+    "access": "public",
+    "description": "Takes the q parameter from the query string and passes to walmart API as the keyword",
+    "lineNumber": 19,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "RequestParams"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "request",
+        "description": "request parameters"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise"
+      ],
+      "spread": false,
+      "description": "resolves once returning the results from walmart API"
+    }
+  },
+  {
+    "__docId__": 59,
+    "kind": "method",
+    "name": "FindProductIds",
+    "memberof": "src/controllers/walmart/products.controller.js~ProductsController",
+    "generator": false,
+    "async": true,
+    "static": true,
+    "longname": "src/controllers/walmart/products.controller.js~ProductsController.FindProductIds",
+    "access": "public",
+    "description": "Uses the q parameter of query string and returns a list of IDs of products returned from walmart API",
+    "lineNumber": 37,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "RequestParams"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "request",
+        "description": "request parameters"
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise"
+      ],
+      "spread": false,
+      "description": "resolves once returning the product ids matching the keyword"
+    }
+  },
+  {
+    "__docId__": 60,
+    "kind": "file",
+    "name": "src/controllers/walmart/products.controller.spec.js",
+    "content": "//@flow\nimport { ProductsController } from './products.controller.js';\n\nimport { describe, it, afterEach } from 'mocha';\nimport { expect } from 'chai';\n\nvar chai = require('chai');\nimport sinon from 'sinon';\nimport sinonChai from 'sinon-chai';\nchai.should();\nchai.use(sinonChai);\n\nimport rp from 'request-promise';\n\ndescribe('Products Controller', () => {\n  describe('has endpoint FindProducts()', () => {\n\n    const items = [{\n      itemId: '123'\n    }];\n\n    it('passes URL query string parameter to walmart API', async () => {\n      const getStub = sinon.stub(rp, 'get');\n      getStub.resolves(JSON.stringify({\n        items\n      }));\n\n      await ProductsController.FindProducts({\n        query: {\n          q: 'keyword'\n        }\n      });\n\n      expect(getStub).to.be.called;\n    });\n\n    it('returns items from response', async () => {\n      sinon.stub(rp, 'get').resolves(JSON.stringify({\n        items\n      }));\n    });\n  });\n\n  afterEach(() => {\n    // Restore the default sandbox\n    sinon.restore();\n  });\n});\n",
+    "static": true,
+    "longname": "/Users/djunker/js/app/app.walmart.api/src/controllers/walmart/products.controller.spec.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 61,
+    "kind": "variable",
+    "name": "chai",
+    "memberof": "src/controllers/walmart/products.controller.spec.js",
+    "static": true,
+    "longname": "src/controllers/walmart/products.controller.spec.js~chai",
+    "access": "public",
+    "export": false,
+    "importPath": "app.api.walmart/src/controllers/walmart/products.controller.spec.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 6,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 62,
+    "kind": "file",
+    "name": "src/entry.js",
+    "content": "//@flow\nrequire('babel-core/register');\nrequire('babel-polyfill');\n\nimport Server from './server.js';\n\nconst server = new Server();\n\nimport infoRoutes from './controllers/info.controller.js';\nimport helloRoutes from './controllers/hello.controller.js';\n\nimport walmartProductRoutes from './controllers/walmart/products.controller.js';\n\nlet routes = infoRoutes.concat(helloRoutes, walmartProductRoutes);\n\nserver.run().then(() => {\n\n  server.addEndpoints(routes);\n});\n\nprocess.on('unhandledRejection', (err) => {\n  process.stdout.write(err);\n  process.exit(1);\n});\n",
+    "static": true,
+    "longname": "/Users/djunker/js/app/app.walmart.api/src/entry.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 63,
+    "kind": "variable",
+    "name": "server",
+    "memberof": "src/entry.js",
+    "static": true,
+    "longname": "src/entry.js~server",
+    "access": "public",
+    "export": false,
+    "importPath": "app.api.walmart/src/entry.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 6,
+    "undocument": true,
+    "type": {
+      "types": [
+        "src/server.js~Server"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 64,
+    "kind": "variable",
+    "name": "routes",
+    "memberof": "src/entry.js",
+    "static": true,
+    "longname": "src/entry.js~routes",
+    "access": "public",
+    "export": false,
+    "importPath": "app.api.walmart/src/entry.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 13,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 65,
+    "kind": "file",
+    "name": "src/server.js",
+    "content": "//@flow\nrequire('babel-core/register');\nrequire('babel-polyfill');\n\nconst Pino = require('hapi-pino');\nconst Hapi = require('hapi');\n\nexport interface Endpoint {\n  method: string;\n  path: string;\n  controller: Function;\n}\n\n/**\n * Server class that starts and initializes Hapi server\n */\nexport default class Server {\n  server: any;\n  _initialized: boolean;\n\n  constructor() {\n    this.server = Hapi.server({\n      port: 3333,\n      host: 'localhost'\n    });\n  }\n\n  /**\n   * Starts the server and registers any plugins\n   * @return {Promise} Resolves once server has started\n   */\n  async run() {\n    await this.server.start();\n    /// process.stdout.write('Server started on ' + this.server.info.port);\n\n    // Add Access Logger\n    await this.server.register({\n      plugin: Pino,\n      options: {\n        prettyPrint: false,\n        logEvents: ['response']\n      }\n    });\n\n    this._initialized = true;\n  }\n\n  /**\n   * Adds an endpoint at the path given handled by the controller\n   * @param {string} method     HTTP method the endpoint must be called with to trigger controller\n   * @param {string} path       URL path of endpoint\n   * @param {Function} controller Handler function that is triggered when endpoint is hit\n   */\n  addEndpoint({ method, path, controller }: Endpoint) {\n    if(this._initialized) {\n      this.server.route({\n        method,\n        path,\n        handler: controller,\n        options: {\n          cors: true\n        }\n      });\n    } else {\n      throw new Error('Must initialize server');\n    }\n  }\n\n  /**\n   * Adds the endpoints given to the server\n   * @param {Array<Endpoint>} routes Routes to add to the server\n   */\n  addEndpoints(routes: Array<Endpoint>) {\n    for(var i = 0; i < routes.length; i++) {\n      this.addEndpoint(routes[i]);\n    }\n  }\n}\n",
+    "static": true,
+    "longname": "/Users/djunker/js/app/app.walmart.api/src/server.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 66,
+    "kind": "variable",
+    "name": "Pino",
+    "memberof": "src/server.js",
+    "static": true,
+    "longname": "src/server.js~Pino",
+    "access": "public",
+    "export": false,
+    "importPath": "app.api.walmart/src/server.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 67,
+    "kind": "variable",
+    "name": "Hapi",
+    "memberof": "src/server.js",
+    "static": true,
+    "longname": "src/server.js~Hapi",
+    "access": "public",
+    "export": false,
+    "importPath": "app.api.walmart/src/server.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 68,
+    "kind": "class",
+    "name": "Server",
+    "memberof": "src/server.js",
+    "static": true,
+    "longname": "src/server.js~Server",
+    "access": "public",
+    "export": true,
+    "importPath": "app.api.walmart/src/server.js",
+    "importStyle": "Server",
+    "description": "Server class that starts and initializes Hapi server",
+    "lineNumber": 10,
+    "interface": false
+  },
+  {
+    "__docId__": 69,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/server.js~Server",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/server.js~Server#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 12,
+    "undocument": true
+  },
+  {
+    "__docId__": 70,
+    "kind": "member",
+    "name": "server",
+    "memberof": "src/server.js~Server",
+    "static": false,
+    "longname": "src/server.js~Server#server",
+    "access": "public",
+    "description": null,
+    "lineNumber": 13,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 71,
+    "kind": "method",
+    "name": "run",
+    "memberof": "src/server.js~Server",
+    "generator": false,
+    "async": true,
+    "static": false,
+    "longname": "src/server.js~Server#run",
+    "access": "public",
+    "description": "Starts the server and registers any plugins",
+    "lineNumber": 23,
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise"
+      ],
+      "spread": false,
+      "description": "Resolves once server has started"
+    },
+    "params": []
+  },
+  {
+    "__docId__": 72,
+    "kind": "member",
+    "name": "_initialized",
+    "memberof": "src/server.js~Server",
+    "static": false,
+    "longname": "src/server.js~Server#_initialized",
+    "access": "private",
+    "description": null,
+    "lineNumber": 36,
+    "undocument": true,
+    "type": {
+      "types": [
+        "boolean"
+      ]
+    }
+  },
+  {
+    "__docId__": 73,
+    "kind": "method",
+    "name": "addEndpoint",
+    "memberof": "src/server.js~Server",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/server.js~Server#addEndpoint",
+    "access": "public",
+    "description": "Adds an endpoint at the path given handled by the controller",
+    "lineNumber": 45,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "method",
+        "description": "HTTP method the endpoint must be called with to trigger controller"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "path",
+        "description": "URL path of endpoint"
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Function"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "controller",
+        "description": "Handler function that is triggered when endpoint is hit"
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 74,
+    "kind": "method",
+    "name": "addEndpoints",
+    "memberof": "src/server.js~Server",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/server.js~Server#addEndpoints",
+    "access": "public",
+    "description": "Adds the endpoints given to the server",
+    "lineNumber": 64,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Array<Endpoint>"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "routes",
+        "description": "Routes to add to the server"
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 75,
+    "kind": "file",
+    "name": "src/server.spec.js",
+    "content": "//@flow\nimport Server from './server.js';\n\nimport { describe, it, afterEach } from 'mocha';\nimport { expect } from 'chai';\n\nconst _ = require('lodash');\n\nvar chai = require('chai');\nimport sinon from 'sinon';\nimport sinonChai from 'sinon-chai';\nchai.should();\nchai.use(sinonChai);\n\nconst Hapi = require('hapi');\n\ndescribe('Server', () => {\n  it('initializes a server on creation', () => {\n    let serverSpy = sinon.spy(Hapi, 'server');\n\n    let server = new Server();\n\n    expect(serverSpy).to.be.calledWith({\n      port: 3333,\n      host: 'localhost'\n    });\n\n    expect(server.server).to.not.be.undefined;\n  });\n\n  describe('has method to start server', () => {\n    it('starts server on run()', async () => {\n      let startSpy = sinon.spy();\n      sinon.stub(Hapi, 'server').returns({\n        start: startSpy,\n        register: sinon.fake(),\n        info: {\n          port: 3333\n        },\n      });\n\n      let server = new Server();\n      await server.run();\n\n      expect(startSpy).to.be.calledOnce;\n    });\n  });\n\n  describe('has method to add endpoint', () => {\n    const endpoint = {\n      method: 'GET',\n      path: 'test/test',\n      controller: () => {\n\n      }\n    };\n\n    it('must be called after run()', () => {\n      let server = new Server();\n\n      let error = false;\n      try {\n        server.addEndpoint(endpoint);\n      } catch (e) {\n        error = true;\n      }\n\n      expect(error).to.be.true;\n    });\n\n    it('calls server.route() with endpoint parameters', async () => {\n      let routeSpy = sinon.spy();\n      sinon.stub(Hapi, 'server').returns({\n        start: sinon.fake(),\n        register: sinon.fake(),\n        info: {\n          port: 3333\n        },\n        route: routeSpy,\n      });\n\n      let server = new Server();\n      await server.run();\n\n      server.addEndpoint(endpoint);\n\n      expect(routeSpy).to.be.calledWithMatch({\n        method: 'GET',\n        path: 'test/test',\n        handler: endpoint.controller\n      });\n    });\n  });\n\n  describe('has method to add multiple endpoints at once', async () => {\n    it('calls route with each endpoint', async () => {\n      const endpoint = {\n        method: 'GET',\n        path: 'test/test',\n        controller: () => {\n\n        }\n      };\n      const endpoints = [endpoint, _.clone(endpoint)];\n      endpoints[1].path = 'test2';\n\n      let routeSpy = sinon.spy();\n      sinon.stub(Hapi, 'server').returns({\n        start: sinon.fake(),\n        register: sinon.fake(),\n        info: {\n          port: 3333\n        },\n        route: routeSpy,\n      });\n\n      let server = new Server();\n      await server.run();\n\n      server.addEndpoints(endpoints);\n\n      expect(routeSpy.firstCall).to.be.calledWithMatch({\n        method: 'GET',\n        path: 'test/test',\n        handler: endpoint.controller\n      });\n\n      expect(routeSpy.secondCall).to.be.calledWithMatch({\n        method: 'GET',\n        path: 'test2',\n        handler: endpoint.controller\n      });\n    });\n  });\n\n  afterEach(() => {\n    // Restore the default sandbox\n    sinon.restore();\n  });\n});\n",
+    "static": true,
+    "longname": "/Users/djunker/js/app/app.walmart.api/src/server.spec.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 76,
+    "kind": "variable",
+    "name": "_",
+    "memberof": "src/server.spec.js",
+    "static": true,
+    "longname": "src/server.spec.js~_",
+    "access": "private",
+    "export": false,
+    "importPath": "app.api.walmart/src/server.spec.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 6,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 77,
+    "kind": "variable",
+    "name": "chai",
+    "memberof": "src/server.spec.js",
+    "static": true,
+    "longname": "src/server.spec.js~chai",
+    "access": "public",
+    "export": false,
+    "importPath": "app.api.walmart/src/server.spec.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 8,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 78,
+    "kind": "variable",
+    "name": "Hapi",
+    "memberof": "src/server.spec.js",
+    "static": true,
+    "longname": "src/server.spec.js~Hapi",
+    "access": "public",
+    "export": false,
+    "importPath": "app.api.walmart/src/server.spec.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 14,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "kind": "index",
+    "content": "# Walmart REST API\n\nUses Hapi.js to create server that connects to the Walmart API and establishes endpoints for passing search terms and retrieving product IDs related to those keywords, retrieved using the API.\n\nBased on this gist: https://gist.github.com/daniyalzade/8e32cd266aebd6d2ce35\n\nWalmart API Docs: https://developer.walmartlabs.com/docs\n\n\n## Commands\n\n`npm run build` to build latest version in `dist/latest` directory (Lints and Typechecks with Flow first, then compiled by Babel)\n\n`npm run clean` to remove latest build directory in `dist/`\n\n`npm run start` to run the latest build server from /dist\n",
+    "longname": "/Users/djunker/js/app/app.walmart.api/README.md",
+    "name": "./README.md",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "packageJSON",
+    "content": "{\n  \"name\": \"app.api.walmart\",\n  \"version\": \"1.0.0\",\n  \"description\": \"REST Server connecting to Walmart API\",\n  \"main\": \"dist/latest/entry.js\",\n  \"keywords\": [\n    \"node\",\n    \"hapi\",\n    \"server\",\n    \"walmart\",\n    \"api\",\n    \"interview\"\n  ],\n  \"author\": \"djunker <devlin.junker@gmail.com>\",\n  \"license\": \"ISC\",\n  \"devDependencies\": {\n    \"babel-cli\": \"^6.26.0\",\n    \"babel-eslint\": \"^8.2.6\",\n    \"babel-polyfill\": \"^6.26.0\",\n    \"babel-preset-env\": \"^1.7.0\",\n    \"babel-preset-es2015\": \"^6.24.1\",\n    \"babel-preset-flow\": \"^6.23.0\",\n    \"babel-preset-stage-0\": \"^6.24.1\",\n    \"chai\": \"^4.1.2\",\n    \"chai-as-promised\": \"^7.1.1\",\n    \"esdoc\": \"^1.1.0\",\n    \"esdoc-flow-plugin\": \"^1.0.0\",\n    \"esdoc-standard-plugin\": \"^1.0.0\",\n    \"eslint\": \"^4.19.1\",\n    \"flow\": \"^0.2.3\",\n    \"flow-bin\": \"^0.56.0\",\n    \"mocha\": \"^5.2.0\",\n    \"nyc\": \"^13.1.0\",\n    \"sinon\": \"^6.3.3\",\n    \"sinon-chai\": \"^3.2.0\"\n  },\n  \"dependencies\": {\n    \"babel-core\": \"^6.26.3\",\n    \"hapi\": \"^17.5.4\",\n    \"hapi-pino\": \"^5.1.0\",\n    \"request-promise\": \"^4.2.2\"\n  },\n  \"scripts\": {\n    \"test\": \"./node_modules/.bin/nyc ./node_modules/.bin/mocha\",\n    \"clean\": \"rm -rf ./dist/latest\",\n    \"lint\": \"./node_modules/.bin/eslint src\",\n    \"flow\": \"./node_modules/.bin/flow\",\n    \"build\": \"npm run flow && npm run lint && ./node_modules/.bin/babel src -d dist/latest\",\n    \"start\": \"node ./dist/latest/entry.js\",\n    \"doc\": \"./node_modules/.bin/esdoc\"\n  }\n}\n",
+    "longname": "/Users/djunker/js/app/app.walmart.api/package.json",
+    "name": "package.json",
+    "static": true,
+    "access": "public"
+  }
+]

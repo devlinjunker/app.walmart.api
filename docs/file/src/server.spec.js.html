@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../">
+  <title data-ice="title">src/server.spec.js | app.api.walmart</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="REST Server connecting to Walmart API"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="app.api.walmart"><meta property="twitter:description" content="REST Server connecting to Walmart API"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+</header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/server.js~Server.html">Server</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#controllers">controllers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/controllers/hello.controller.js~HelloWorld.html">HelloWorld</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#controllers-walmart">controllers/walmart</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/controllers/walmart/products.controller.js~ProductsController.html">ProductsController</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">src/server.spec.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">//@flow
+import Server from &apos;./server.js&apos;;
+
+import { describe, it, afterEach } from &apos;mocha&apos;;
+import { expect } from &apos;chai&apos;;
+
+const _ = require(&apos;lodash&apos;);
+
+var chai = require(&apos;chai&apos;);
+import sinon from &apos;sinon&apos;;
+import sinonChai from &apos;sinon-chai&apos;;
+chai.should();
+chai.use(sinonChai);
+
+const Hapi = require(&apos;hapi&apos;);
+
+describe(&apos;Server&apos;, () =&gt; {
+  it(&apos;initializes a server on creation&apos;, () =&gt; {
+    let serverSpy = sinon.spy(Hapi, &apos;server&apos;);
+
+    let server = new Server();
+
+    expect(serverSpy).to.be.calledWith({
+      port: 3333,
+      host: &apos;localhost&apos;
+    });
+
+    expect(server.server).to.not.be.undefined;
+  });
+
+  describe(&apos;has method to start server&apos;, () =&gt; {
+    it(&apos;starts server on run()&apos;, async () =&gt; {
+      let startSpy = sinon.spy();
+      sinon.stub(Hapi, &apos;server&apos;).returns({
+        start: startSpy,
+        register: sinon.fake(),
+        info: {
+          port: 3333
+        },
+      });
+
+      let server = new Server();
+      await server.run();
+
+      expect(startSpy).to.be.calledOnce;
+    });
+  });
+
+  describe(&apos;has method to add endpoint&apos;, () =&gt; {
+    const endpoint = {
+      method: &apos;GET&apos;,
+      path: &apos;test/test&apos;,
+      controller: () =&gt; {
+
+      }
+    };
+
+    it(&apos;must be called after run()&apos;, () =&gt; {
+      let server = new Server();
+
+      let error = false;
+      try {
+        server.addEndpoint(endpoint);
+      } catch (e) {
+        error = true;
+      }
+
+      expect(error).to.be.true;
+    });
+
+    it(&apos;calls server.route() with endpoint parameters&apos;, async () =&gt; {
+      let routeSpy = sinon.spy();
+      sinon.stub(Hapi, &apos;server&apos;).returns({
+        start: sinon.fake(),
+        register: sinon.fake(),
+        info: {
+          port: 3333
+        },
+        route: routeSpy,
+      });
+
+      let server = new Server();
+      await server.run();
+
+      server.addEndpoint(endpoint);
+
+      expect(routeSpy).to.be.calledWithMatch({
+        method: &apos;GET&apos;,
+        path: &apos;test/test&apos;,
+        handler: endpoint.controller
+      });
+    });
+  });
+
+  describe(&apos;has method to add multiple endpoints at once&apos;, async () =&gt; {
+    it(&apos;calls route with each endpoint&apos;, async () =&gt; {
+      const endpoint = {
+        method: &apos;GET&apos;,
+        path: &apos;test/test&apos;,
+        controller: () =&gt; {
+
+        }
+      };
+      const endpoints = [endpoint, _.clone(endpoint)];
+      endpoints[1].path = &apos;test2&apos;;
+
+      let routeSpy = sinon.spy();
+      sinon.stub(Hapi, &apos;server&apos;).returns({
+        start: sinon.fake(),
+        register: sinon.fake(),
+        info: {
+          port: 3333
+        },
+        route: routeSpy,
+      });
+
+      let server = new Server();
+      await server.run();
+
+      server.addEndpoints(endpoints);
+
+      expect(routeSpy.firstCall).to.be.calledWithMatch({
+        method: &apos;GET&apos;,
+        path: &apos;test/test&apos;,
+        handler: endpoint.controller
+      });
+
+      expect(routeSpy.secondCall).to.be.calledWithMatch({
+        method: &apos;GET&apos;,
+        path: &apos;test2&apos;,
+        handler: endpoint.controller
+      });
+    });
+  });
+
+  afterEach(() =&gt; {
+    // Restore the default sandbox
+    sinon.restore();
+  });
+});
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>
