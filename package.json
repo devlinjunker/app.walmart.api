@@ -30,10 +30,14 @@
     "flow": "^0.2.3",
     "flow-bin": "^0.56.0",
     "mocha": "^5.2.0",
-    "nyc": "^13.1.0"
+    "nyc": "^13.1.0",
+    "sinon": "^6.3.3",
+    "sinon-chai": "^3.2.0"
   },
   "dependencies": {
     "babel-core": "^6.26.3",
+    "hapi": "^17.5.4",
+    "hapi-pino": "^5.1.0"
   },
   "scripts": {
     "test": "./node_modules/.bin/nyc ./node_modules/.bin/mocha",
