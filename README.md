@@ -9,6 +9,8 @@ When running server, the endpoint containing the challenge solution is at `http:
 
 ## Commands
 
+Requires Node v8
+
 `npm run build` to build latest version in `dist/latest` directory (Lints and Typechecks with Flow first, then compiled by Babel)
 
 `npm run clean` to remove latest build directory in `dist/`
