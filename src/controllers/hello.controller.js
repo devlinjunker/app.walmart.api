@@ -1,6 +1,9 @@
 //@flow
 
 /**
+ * Notes from interview:
+ *   make sure to write controllers as functions rather than classes with methods (prevent instantiation on stack)
+ *
  * Controllers for Hello World
  */
 export class HelloWorld {
